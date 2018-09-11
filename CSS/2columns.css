@@ -1,0 +1,95 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 20, 18, 5:58:53 PM
+    Author     : Erickson
+*/
+
+
+div.DivTemplateRight, div.DivTemplateLeft{
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    min-width:700px;
+    max-width:700px;
+    width:700px;
+    background-color: white;
+    padding : 10px 10px 10px 10px; /* Padding Top/Right/Bottom/Left */
+    text-align:justify;
+    -webkit-box-shadow: 2px 2px 0px 0px #0fceca; 
+    -o-box-shadow: 2px 2px 0px 0px #0fceca ; 
+    -moz-box-shadow: 2px 2px 0px 0px #0fceca ; 
+    box-shadow: 2px 2px 0px 0px #0fceca; 
+    
+  }
+
+
+div.DivTemplateLeft{
+    min-width:270px;
+    max-width:270px;
+    width:270px;
+        /*
+ -webkit-box-shadow: 0px 0px;
+    -o-box-shadow: 0px 0px;
+    -moz-box-shadow: 0px 0px;
+    box-shadow: 0px 0px;*/
+}
+
+/* DIY table */
+div.DivtemplateLeft td, div.DivtemplateRight td
+{
+      vertical-align: top;
+      background: pink;
+}
+td.twocolumns{
+    padding-left: 8px;
+}
+
+td.threecolumns{
+    padding-left: 12px;
+}
+
+tr{
+    padding-bottom: 10px;
+}
+
+/* input type*/
+input[type=text], input[type=password], input[type=number], input[type=email], textArea, input[type=date], input[type=time],
+input[type=file], input[type=tel], select{
+     min-width: 220px;
+    max-width: 655px;
+    width: 655px;
+}
+
+/* input type*/
+div.DivTemplateLeft input[type=text] , div.DivTemplateLeft input[type=password], div.DivTemplateLeft input[type=number],
+div.DivTemplateLeft input[type=email], div.DivTemplateLeft textArea, div.DivTemplateLeft input[type=date],
+div.DivTemplateLeft input[type=time], div.DivTemplateLeft input[type=file], div.DivTemplateLeft input[type=tel],div.DivTemplateLeft select{
+    min-width:225px;
+    max-width: 225px;
+    width: 225px;
+ 
+}
+
+input[type=text].InputHalfWidth, input[type=password].InputHalfWidth, input[type=number].InputHalfWidth,
+input[type=email].InputHalfWidth, textarea.InputHalfWidth, input[type=date].InputHalfWidth,
+input[type=time].InputHalfWidth, input[type=file].InputHalfWidth,input[type=tel].InputHalfWidth,  select.InputHalfWidth
+{
+    min-width: 220px !important;
+    max-width: 300px !important;
+    width: 300px !important;
+}
+
+input[type=text].InputOneThirdWidth, input[type=password].InputOneThirdWidth, input[type=number].InputOneThirdWidth,
+input[type=email].InputOneThirdWidth, textarea.InputOneThirdWidth, input[type=date].InputOneThirdWidth,
+input[type=time].InputOneThirdWidth, input[type=file].InputOneThirdWidth, input[type=tel].InputOneThirdWidth, select.InputOneThirdWidth
+{
+    min-width: 20px !important;
+    max-width: 180px !important;
+    width: 190px !important;
+}
+

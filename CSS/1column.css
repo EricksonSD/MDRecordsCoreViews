@@ -1,0 +1,72 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 24, 18, 5:44:04 PM
+    Author     : Erickson
+*/
+
+div.DivTemplate{
+    max-width: 1024px;
+    width:100%;
+        display:inline-block;
+    height: 100%;
+    margin-top: 10px;
+    border-radius: 5px 5px 5px 5px;
+    -moz-border-radius: 5px 5px 5px 5px;
+    -webkit-border-radius: 5px 5px 5px 5px;
+    min-width:600px;
+        background-color: white;
+    padding : 10px 10px 10px 10px; /* Padding Top/Right/Bottom/Left */
+    text-align:justify;
+    -webkit-box-shadow: 2px 2px 0px 0px #0fceca; 
+    -o-box-shadow: 2px 2px 0px 0px #0fceca ; 
+    -moz-box-shadow: 2px 2px 0px 0px #0fceca ; 
+    box-shadow: 2px 2px 0px 0px #0fceca; 
+   }
+
+
+/* DIY table */
+div.Divtemplate td
+{
+      vertical-align: top;
+}
+
+td.twocolumns{
+    padding-left: 14px;
+}
+
+td.threecolumns{
+    padding-left: 9px;
+}
+
+tr{
+    padding-bottom: 5px;
+}
+
+input[type=text], input[type=password], input[type=number], input[type=email], textArea, input[type=date],
+input[type=time], input[type=file],input[type=tel], select{
+     min-width: 220px;
+    max-width: 980px;
+    width: 980px;
+}
+
+input[type=text].InputHalfWidth, input[type=password].InputHalfWidth, input[type=number].InputHalfWidth,
+input[type=email].InputHalfWidth, textarea.InputHalfWidth, input[type=date].InputHalfWidth,
+input[type=time].InputHalfWidth, input[type=file].InputHalfWidth,input[type=tel].InputHalfWidth, select.InputHalfWidth
+{
+    min-width: 460px !important;
+    max-width: 460px !important;
+    width: 460px !important;
+}
+
+input[type=text].InputOneThirdWidth, input[type=password].InputOneThirdWidth, input[type=number].InputOneThirdWidth,
+input[type=email].InputOneThirdWidth, textarea.InputOneThirdWidth, input[type=date].InputOneThirdWidth,
+input[type=time].InputOneThirdWidth, input[type=file].InputOneThirdWidth, input[type=tel].InputOneThirdWidth, select.InputOneThirdWidth
+{
+    min-width: 20px !important;
+    max-width: 320px !important;
+    width: 290px !important;
+}

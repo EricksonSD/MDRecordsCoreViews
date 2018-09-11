@@ -1,0 +1,516 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07 20, 18, 5:58:53 PM
+    Author     : Erickson
+*/
+
+#container {
+    margin-right: auto;
+    margin-left: auto;
+
+}
+
+* {
+    padding: 0;
+    font: 14px Segoe UI;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 0;
+    color: #676767;
+}
+
+
+
+.HeaderText{
+    color: #0d8ab3;
+    font-size: 18px;
+    font-weight:bolder;
+}
+
+.DivHeaderText{
+    color: #0d8ab3;
+    font-weight:bolder;
+ 
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background: #333;
+    background-image: linear-gradient(to right, #0fceca, #0996c1, #0fceca);
+    margin-top: -1em;
+}
+
+
+/* input type*/
+input[type=text], input[type=password], input[type=number], input[type=email], textArea, input[type=date], input[type=time], input[type=tel], select{
+    display: inline-block;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    padding: 9px 20px;
+    border: 1px solid #b7b7b7;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    -o-text-overflow: clip;
+    text-overflow: clip;
+    background: rgba(252,252,252,1);
+    text-shadow: 1px 1px 0 rgba(255,255,255,0.66) ;
+    -webkit-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -moz-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    -o-transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    transition: all 200ms cubic-bezier(0.42, 0, 0.58, 1);
+    height: 20px !important;
+}
+
+
+textarea{
+    height:60px !important;
+}
+
+input[type=text]:required, input[type=password]:required, input[type=number]:required, input[type=email]:required, textArea:required, input[type=date]:required, input[type=time]:required, input[type=tel]:required, select:required{
+    border:#0d8ab3 solid thin;
+      color: #0d8ab3;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=number]:hover, input[type=email]:hover, textarea:hover, input[type=date]:hover, input[type=time]:hover, input[type=tel]:hover, select:hover{
+    border:#0fceca solid thin;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=number]:focus, input[type=email]:focus, textarea:focus, input[type=date]:focus, input[type=time]:focus, input[type=tel]:focus, select:focus{
+border: #8cbd01 solid thin;
+}
+
+input[type=checkbox], input[type=radio]{
+    margin: 5px 5px;
+}
+
+textarea:focus{
+        min-height: 60px;
+    height:400px !important;
+}
+/*
+input[type=text]:invalid, input[type=password]:invalid, input[type=number]:invalid, input[type=email]:invalid, textarea:invalid, input[type=date]:invalid{
+    border: #de6600 solid thin;
+}
+*/
+
+
+input[type=submit], input[type=button], input[type=reset], button.goToButtons, button.navigator {
+    border : solid 0px #0996c1;
+    /* border-radius : 5px; */
+    moz-border-radius : 5px;
+    font-size : 16px;
+    color : #ffffff;
+    padding : 9px 10px;
+    background : #0996c1;
+    background : -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0996c1), color-stop(100%,#0d8ab3));
+    background : -moz-linear-gradient(top, #0996c1 0%, #0d8ab3 100%);
+    background : -webkit-linear-gradient(top, #0996c1 0%, #0d8ab3 100%);
+    background : -o-linear-gradient(top, #0996c1 0%, #0d8ab3 100%);
+    background : -ms-linear-gradient(top, #0996c1 0%, #0d8ab3 100%);
+    background : linear-gradient(top, #0996c1 0%, #0d8ab3 100%);
+    filter : progid:DXImageTransform.Microsoft.gradient( startColorstr='#0996c1', endColorstr='#0d8ab3',GradientType=0 );
+       
+    min-width: 100px;
+    max-width: 680px;
+}
+
+button.goToButtons {
+    width: 100%;
+}
+
+
+
+input[type=submit]:hover, input[type=button]:hover, button.goToButtons:hover, button.navigator{
+    background : #8cbd01;
+}
+
+input[type=submit][value=CANCEL], input[type=button][value=CANCEL], input[type=submit][value=RESET], input[type=button][value=RESET], input[type=reset]
+{
+    background: #de6600;
+       left: 0;
+}
+
+input[type=submit][value=CANCEL]:hover, input[type=button][value=CANCEL]:hover,input[type=reset]:hover, input[type=submit][value=RESET]:hover, input[type=button][value=RESET]:hover
+{
+    background: red;
+
+}
+
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+      -webkit-appearance: none; 
+      margin: 0; 
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  margin: 0; 
+}
+/*Navigation Bar*/
+
+
+.navbar {
+    background-color: ghostwhite;
+}
+
+.navbar a {
+    float: left;
+    font-size: 16px;
+    color: #676767;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;    
+    border: none;
+    outline: none;
+    color: #676767;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: #0996c1 ;
+    color: white;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #0fceca;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+tr {
+    padding-top: 5 px;
+    padding-bottom: 5 px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 50px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+        background-color: #1e1e1e ; /* Black w/ opacity */
+    opacity: 0.9;
+}
+
+/* Modal Content */
+.modal-content {
+         position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #0d8ab3  ;
+    width: 80%;
+    min-width: 600px;
+    max-width: 900px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+div.modal-header {
+    padding: 5px 10px;
+    font-size: 22px;
+    font-weight: 500;
+    background: -webkit-linear-gradient(left, #0fceca , #0996c1); background: -o-linear-gradient(left, #0fceca, #0996c1); background: -moz-linear-gradient(left, #0fceca, #0996c1);
+    background: linear-gradient(to left, #0fceca , #0996c1);
+    color: white;
+}
+
+div.modal-body {padding: 5px 10px; overflow-y: scroll;max-height: 400px;}
+
+div.modal-footer {
+    padding: 5px 16px;
+    background-color: #ebebeb;
+    overflow: hidden;
+/*    background: -webkit-linear-gradient(right, #0fceca , #0996c1); background: -o-linear-gradient(right, #0fceca, #0996c1); background: -moz-linear-gradient(right, #0fceca, #0996c1);
+    background: linear-gradient(to right, #0fceca , #0996c1);
+    color: white; */
+}
+
+/* SideNav CSS */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #0996c1 ;
+    overflow-x: hidden;
+    transition: 0s;
+    padding-top: 60px;
+    color:white;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 8px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.6s;
+    border-top: solid thin #0d8ab3 ;
+  
+}
+
+.sidenav a:hover {
+    background-color: #8cbd01;
+    color: white;
+     
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    bottom: 100px;
+    right: 85px;
+    font-size: 20px;
+    margin-left: 50px;
+    border-radius: 50px 50px;
+  padding: 10px 15px;
+  background-color:white;
+  color:#0996c1;
+}
+
+.sidenav .closebtn:hover {
+    background-color: white;
+     border-top: 0px;
+   color: #de6600;
+}
+#main {
+    transition: margin-left .1s;
+    padding: 16px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+/* Create two equal columns that floats next to each other */
+.gridlistwrapper{
+    border: 2px solid #0fceca   ;
+    border-right: none;
+}
+
+.column {
+    float: left;
+    width: 47.84%;
+    padding: 10px;
+ 
+    
+    background-color: white;
+     border: 2px solid #0996c1    ; /* divider */
+     border-top: none;
+     border-left: none;
+   
+}
+
+
+
+
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+   
+}
+/* Style the buttons */
+.btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: #ebebeb;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #0d8ab3 ;
+    color:white;
+}
+
+.btn.active {
+    background-color: #0fceca ;
+    color: white;
+}
+
+::-moz-selection {
+  background: #8cbd01;
+  color:white;
+}
+
+ ::selection
+ {
+  background: #8cbd01;
+  color:white;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #ebebeb;
+
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #0996c1 ;
+    color:white;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #0fceca;
+    color:white;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 0px 0px;
+    border: none;
+ } 
+ 
+     /*padding: 6px 12px;
+    border: 1px solid #0fceca;
+    border-top: none;*/
+     
+a.back-to-top {
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-indent: -9999px;
+    position: fixed;
+    z-index: 999;
+    right: 10px;
+    bottom: 10px;
+    background: #8cbd01 url("../Images/up-arrow.png") no-repeat center 43%;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+}
+
+a:hover.back-to-top {
+    background-color: #de6600;
+}
+
+label.warningLabel{
+    color: #de6600;
+    font-weight: bolder;
+display: none;
+}
+
+label.success{
+    color: #8cbd01;
+    font-weight: bolder;
+    display: none;
+}
+
+
+div.dataDisplayer table {
+    border-collapse: collapse;
+    word-break: break-all ;
+ 
+      }
+
+div.dataDisplayer th, div.dataDisplayer td {
+    text-align: left;
+    padding: 8px;
+}
+
+
+
+div.dataDisplayer tr:nth-child(even) {background-color: #ebebeb; }
+
+div.dataDisplayer td:nth-child(even), .evencolumn {color: #0996c1; font-weight: bold;}
+
+div.dataDisplayer td:nth-child(odd) { font-weight: 600;}
+div.dataDisplayer th
+{
+color: white;
+background-color: #0996c1;
+border-right:1px solid #ebebeb;
+}
+
+.tableActions{
+    width: 100%;
+}
+.tableActions tr td:first-child{
+ text-align: left;
+}
+
+.tableActions tr td:last-child{
+   text-align: right;
+}
