@@ -6,7 +6,7 @@
 
 <?php echo body("Allan Santiago", "Physician", "../Images/default pic.jpg"); ?>
 <?php echo LeftDiv(); ?>
-<!--    TEMPLATE:
+<!--    TEMPLATE: qweqwe
            <div class="DivTemplateLeft"><p class="divheadertext">HEADER TEXT</p><hr>CONTENT</div>
 -->
 <?php echo LeftDivFirst("PATIENT NAME", "../Images/default pic.jpg") ?>
